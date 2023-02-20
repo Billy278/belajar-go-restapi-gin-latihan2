@@ -1,0 +1,36 @@
+### get all guru
+GET http://localhost:9000/api/guru
+Accept: application/json
+API-KEY: API-SIMPLE
+### get by id guru
+GET http://localhost:9000/api/guru/GR03
+Accept: application/json
+API-KEY: API-SIMPLE
+
+### Create guru
+POST http://localhost:9000/api/guru
+Accept: application/json
+Content-Type: application/json
+API-KEY: API-SIMPLE
+
+{
+    "id_guru" :"GR03",
+    "name" :"TEsy",
+    "status" : false
+}
+
+### delete guru
+DELETE http://localhost:9000/api/guru/GR03
+Accept: application/json
+API-KEY: API-SIMPLE
+
+### Update guru
+PUT http://localhost:9000/api/guru/GR03
+Accept: application/json
+Content-Type: application/json
+API-KEY: API-SIMPLE
+
+{
+    "name" :"aji",
+    "status" : true
+}
